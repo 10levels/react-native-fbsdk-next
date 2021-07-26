@@ -57,7 +57,7 @@ module.exports = {
    */
   setAutoLogAppEventsEnabled(ATE: boolean) {
     if (Platform.OS === 'ios') {
-      return Settings.setAutoLogAppEventsEnabled();
+      return Settings.setAutoLogAppEventsEnabled(ATE);
     }
   },
 };
